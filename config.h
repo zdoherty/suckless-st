@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Inconsolata:pixelsize=14:lcdfilter=lcddefault:hintstyle=hintfull:hinting=true:rgba=rgb:antialias=true:autohint=false";
+static char font[] = "Inconsolata for Powerline:pixelsize=14:lcdfilter=lcddefault:hintstyle=hintfull:hinting=true:rgba=rgb:antialias=true:autohint=false";
 static int borderpx = 2;
 static int histsize = 2000;
 
@@ -17,7 +17,7 @@ static int histsize = 2000;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char shell[] = "/bin/zsh";
+static char shell[] = "/bin/bash";
 static char *utmp = NULL;
 static char stty_args[] = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
@@ -68,55 +68,6 @@ static char termname[] = "xterm-256color";
 
 static unsigned int tabspaces = 4;
 
-// https://github.com/grigorescu/base16-builder
-
-// Base16 Eighties dark - simple terminal color setup
-// Chris Kempson (http://chriskempson.com)
-//static const char *colorname[] = {
-//	/* Normal colors */
-//	"#2d2d2d", /*  0: Base 00 - Black   */
-//	"#f2777a", /*  1: Base 08 - Red     */
-//	"#99cc99", /*  2: Base 0B - Green   */
-//	"#ffcc66", /*  3: Base 0A - Yellow  */
-//	"#6699cc", /*  4: Base 0D - Blue    */
-//	"#cc99cc", /*  5: Base 0E - Magenta */
-//	"#66cccc", /*  6: Base 0C - Cyan    */
-//	"#d3d0c8", /*  7: Base 05 - White   */
-//
-//	/* Bright colors */
-//	"#747369", /*  8: Base 03 - Bright Black */
-//	"#F9", /*  9: Base 08 - Red          */
-//	"#A6E22E", /* 10: Base 0B - Green        */
-//	"#F8F8F2", /* 11: Base 0A - Yellow       */
-//	"#89DBFF", /* 12: Base 0D - Blue         */
-//	"#cc99cc", /* 13: Base 0E - Magenta      */
-//	"#66cccc", /* 14: Base 0C - Cyan         */
-//	"#f2f0ec", /* 15: Base 05 - Bright White */
-//
-//	/* A few more colors */
-//
-//	"#f99157", /* 16: Base 09 */
-//	"#d27b53", /* 17: Base 0F */
-//	"#393939", /* 18: Base 01 */
-//	"#515151", /* 19: Base 02 */
-//	"#a09f93", /* 20: Base 04 */
-//	"#e8e6df", /* 21: Base 06 */
-//
-//	[255] = 0,
-//
-//	[256] = "#d3d0c8", /* default fg: Base 05 */
-//	[257] = "#2d2d2d", /* default bg: Base 00 */	
-//};
-//
-///*
-// * Default colors (colorname index)
-// * foreground, background, cursor, reverse cursor
-// */
-//static unsigned int defaultfg = 256;
-//static unsigned int defaultbg = 257;
-//static unsigned int defaultcs = 256;
-//static unsigned int defaultrcs = 257;
-
 // Molokai color scheme
 static const char *colorname[] = {
   "#1B1D1E", /*  0: black     */
@@ -139,7 +90,7 @@ static const char *colorname[] = {
 
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
-static unsigned int defaultcs = 13;
+static unsigned int defaultcs = 3;
 static unsigned int defaultrcs = 0;
 
 /*
